@@ -1,6 +1,7 @@
 # Nepali Date Converter
 
 This is a Django-based web application that converts an English date into a Nepali date and displays the corresponding Nepali calendar with additional information like the weekday, Tithi, and any special events. The application features a visually appealing and interactive calendar.
+### The entire logic is not imported form any existing modules of python instead it is created by me.
 
 ---
 
