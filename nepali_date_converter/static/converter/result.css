@@ -264,3 +264,30 @@ footer .convert-again-btn:hover {
     color: red;
     font-weight: bold;
 }
+
+/* Styling for weekday headers */
+.weekday-box {
+    background-color: #f0f8ff; /* Light blue for the box background */
+    color: #000080; /* Navy blue for the text */
+    font-weight: bold;
+}
+
+.saturday-box {
+    background-color: #e40d0d; /* Light red for the box background */
+    color: #fefefe; /* Bright red for the text */
+    font-weight: bold;
+}
+
+.regular-box {
+    background-color: #4949d3; /* Light cyan for regular weekdays */
+    color: #efeff3; /* Bright blue for text */
+    font-weight: bold;
+}
+
+/* Highlight for the converted Nepali date */
+.highlight-day {
+    background-color: #ffe4b5; /* Light golden color */
+    color: #8b4513; /* SaddleBrown for the text */
+    font-weight: bold;
+    border: 2px solid #8b0000; /* Dark red border for emphasis */
+}

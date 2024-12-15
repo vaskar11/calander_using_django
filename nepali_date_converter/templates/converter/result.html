@@ -26,26 +26,27 @@
             <div class="calendar-grid">
                 <!-- Render weekday headers -->
                 {% for weekday in weekdays %}
-                    <div class="day-box-regular{% if weekday == 'शनि' %} day-box-saturday{% endif %}">{{ weekday }}</div>
+                    <div class="day-box weekday{% if weekday == 'शनि' %} saturday-box{% else %} regular-box{% endif %}">
+                        {{ weekday }}
+                    </div>
                 {% endfor %}
-
+            
                 <!-- Render day numbers -->
                 {% for week in calendar %}
                     {% for day in week %}
                         {% if day == ' ' %}
                             <div class="day-box empty"></div>
                         {% else %}
-                            <div class="day-box{% if that_day|add:'0' == day|add:'0' %} highlight{% endif %}">
-                                <div class="eng_day">{{ eng_day }}</div>
-                                <div>
-                                    <div class="original_day">{{ day }}</div>
-                                    <div class="tithi">{{ tithi }}</div>
-                                </div>
+                            <div class="day-box{% if that_day|add:'0' == day|add:'0' %} highlight-day{% endif %}">
+                                <div class="eng_day">{{ day }}</div>
                             </div>
                         {% endif %}
                     {% endfor %}
                 {% endfor %}
             </div>
+            
+            
+            
         </div> 
 
         <footer>

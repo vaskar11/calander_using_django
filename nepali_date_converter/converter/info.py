@@ -18,4 +18,4 @@ file_path = os.path.join(current_dir, 'calendar_bs.csv')
 
 # Load the CSV data into a dictionary
 bs_years_data = load_bs_years_data(file_path)
-print(bs_years_data)
+
