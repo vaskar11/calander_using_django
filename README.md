@@ -109,10 +109,11 @@ project-root/
 ## Screenshots
 
 ### Homepage
-![Homepage](https://via.placeholder.com/600x400.png?text=Homepage)
+![Homepage](result_images/home.png)
 
 ### Result Page
-![Result Page](https://via.placeholder.com/600x400.png?text=Result+Page)
+![Result Page](result_images/result.png)
+
 
 ---
 
