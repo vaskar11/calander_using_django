@@ -1,0 +1,266 @@
+/* General Reset
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+
+.container {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #2a9d8f;
+    margin: 0;
+}
+
+
+.details {
+    margin-bottom: 2rem;
+}
+
+.details p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+.details strong {
+    color: #264653;
+}
+
+
+.calendar-section {
+    text-align: center;
+}
+
+.calendar-section h2 {
+    font-size: 1.8rem;
+    color: #e76f51;
+    margin-bottom: 1rem;
+}
+
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.day-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.day-box:hover {
+    background-color: #2a9d8f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.day-box:empty {
+    background-color: transparent;
+    border: none;
+    pointer-events: none;
+}
+
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer .convert-again-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2a9d8f;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+footer .convert-again-btn:hover {
+    background-color: #264653;
+}
+
+
+.weekday.regular {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.weekday.saturday {
+    color: red;
+    font-weight: bold;
+}
+ */
+
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #2a9d8f;
+    margin: 0;
+}
+
+/* Details Section */
+.details {
+    margin-bottom: 2rem;
+}
+
+.details p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+.details strong {
+    color: #264653;
+}
+
+/* Calendar Section */
+.calendar-section {
+    text-align: center;
+}
+
+.calendar-section h2 {
+    font-size: 1.8rem;
+    color: #e76f51;
+    margin-bottom: 1rem;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Day Boxes */
+.day-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.day-box:hover {
+    background-color: #2a9d8f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Styling Empty Boxes (e.g., padding days) */
+.day-box:empty {
+    background-color: transparent;
+    border: none;
+    pointer-events: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer .convert-again-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2a9d8f;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+footer .convert-again-btn:hover {
+    background-color: #264653;
+}
+
+/* Styling for regular weekdays */
+.weekday.regular {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Styling for Saturday */
+.weekday.saturday {
+    color: red;
+    font-weight: bold;
+}

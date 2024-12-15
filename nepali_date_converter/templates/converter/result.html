@@ -1,0 +1,56 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'converter/result.css' %}">
+    <title>Converted Date</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Converted Nepali Date and Calendar</h1>
+        </header>
+
+        <div class="details">
+            <p><strong>Nepali Date:</strong> {{ nepali_date }}</p>
+            <p><strong>Weekday:</strong> {{ weekday }}</p>
+            <p><strong>Tithi:</strong> {{ tithi }}</p>
+            <p><strong>Special Event:</strong> {{ event }}</p>
+        </div>
+
+        <div class="calendar-section">
+            <h2>{{ year_date }} / {{ month_name }}</h2>
+            <div class="calendar-grid">
+                <!-- Render weekday headers -->
+                {% for weekday in weekdays %}
+                    <div class="day-box-regular{% if weekday == 'शनि' %} day-box-saturday{% endif %}">{{ weekday }}</div>
+                {% endfor %}
+
+                <!-- Render day numbers -->
+                {% for week in calendar %}
+                    {% for day in week %}
+                        {% if day == ' ' %}
+                            <div class="day-box empty"></div>
+                        {% else %}
+                            <div class="day-box{% if that_day|add:'0' == day|add:'0' %} highlight{% endif %}">
+                                <div class="eng_day">{{ eng_day }}</div>
+                                <div>
+                                    <div class="original_day">{{ day }}</div>
+                                    <div class="tithi">{{ tithi }}</div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div> 
+
+        <footer>
+            <a href="{% url 'index' %}" class="convert-again-btn">Convert another date</a>
+        </footer>
+    </div>
+</body>
+</html>
