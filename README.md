@@ -124,12 +124,6 @@ Feel free to fork this repository, create a feature branch, and submit a pull re
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
 ## Acknowledgments
 
 - Inspired by the traditional Nepali calendar and lunar calculations.
